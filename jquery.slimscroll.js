@@ -100,8 +100,8 @@
             var offset = me.scrollTop();
 
             // find bar and rail
-            var bar = me.closest('.' + o.barClass);
-            var rail = me.closest('.' + o.railClass);
+            var bar = me.parent().find('.' + o.barClass);
+            var rail = me.parent().find('.' + o.railClass);
 
             getBarHeight();
 
